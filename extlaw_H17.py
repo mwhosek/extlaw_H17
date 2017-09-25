@@ -1,7 +1,6 @@
 import numpy as np
 from scipy import interpolate
 import pylab as py
-import pdb
 
 
 def extinction(AKs, wavelength):
@@ -90,7 +89,7 @@ def plot_extinction_law():
     Saves plot in current working directory as 'extlaw_H17.png'
     """
     # Define wavelengths
-    wave = np.arange(0.806, 2.2, 0.1)
+    wave = np.arange(0.8, 2.2, 0.1)
 
     # Define extinction law and errors. Matching derivation in paper,
     # A_Ks = 1
